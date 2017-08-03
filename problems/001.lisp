@@ -1,8 +1,7 @@
 ;;;; Problem 1
 ;;;; Multiples of 3 and 5
 
-(defun is-divisible (n divisor)
-  (= (mod n divisor) 0))
+(load "is-divisible.lisp")
 
 (defvar *sum* 0)
 (loop for i from 1 below 1000
