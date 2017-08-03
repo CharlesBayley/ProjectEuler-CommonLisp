@@ -1,15 +1,8 @@
 ;;;; Problem 2
 ;;;; Even Fibonacci numbers
 
+(load "fibonacci.lisp")
 (load "is-divisible.lisp")
-
-(defun fibonacci (n)
-  (defvar value)
-  (loop repeat (incf n)
-        for x = 0 then y
-        and y = 1 then (+ x y)
-        do (setf value y))
-  value)
 
 (defvar *sum* 0)
 (loop for i = 1 then (incf i)
