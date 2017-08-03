@@ -5,14 +5,14 @@
 
 (defun fibonacci (n)
   (defvar value)
-  (loop repeat (+ n 1)
+  (loop repeat (incf n)
         for x = 0 then y
         and y = 1 then (+ x y)
         do (setf value y))
   value)
 
 (defvar *sum* 0)
-(loop for i = 1 then (+ i 1)
+(loop for i = 1 then (incf i)
       and fib = (fibonacci i)
       while (<= fib 4000000)
       do (if (is-divisible fib 2)
