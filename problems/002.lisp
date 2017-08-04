@@ -8,6 +8,6 @@
 (loop for i = 1 then (incf i)
       and fib = (fibonacci i)
       while (<= fib 4000000)
-      do (if (is-divisible fib 2)
-             (incf *sum* fib)))
+      if (is-divisible fib 2)
+      do (incf *sum* fib))
 (format t "~a~%" *sum*)
