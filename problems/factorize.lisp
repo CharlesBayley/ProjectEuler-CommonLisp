@@ -8,6 +8,6 @@
   (loop for prime = 2 then (next-prime prime)
         while (not (= n 1))
         do (loop while (is-divisible n prime)
-                 do (progn (setf n (/ n prime))
-                           (setf factors (append factors `(,prime))))))
+                 do (setf n (/ n prime))
+                 do (setf factors (append factors `(,prime)))))
   factors)
