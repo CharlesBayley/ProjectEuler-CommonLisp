@@ -1,6 +1,6 @@
 ;;;; Primality test
 
-(load "is-divisible.lisp")
+(load "is-divisible")
 
 (defun is-prime (n)
   (if (< n 2)

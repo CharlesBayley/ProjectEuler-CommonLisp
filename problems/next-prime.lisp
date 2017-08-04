@@ -1,6 +1,6 @@
 ;;;; Finds the very next prime >n
 
-(load "is-prime.lisp")
+(load "is-prime")
 
 (defun next-prime (n)
   (loop for i = (incf n)

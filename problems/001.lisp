@@ -1,7 +1,7 @@
 ;;;; Problem 1
 ;;;; Multiples of 3 and 5
 
-(load "is-divisible.lisp")
+(load "is-divisible")
 
 (defvar *sum* 0)
 (loop for i from 1 below 1000

@@ -1,7 +1,7 @@
 ;;;; Factorize numbers
 
-(load "is-divisible.lisp")
-(load "next-prime.lisp")
+(load "is-divisible")
+(load "next-prime")
 
 (defun factorize (n)
   (defvar factors nil)

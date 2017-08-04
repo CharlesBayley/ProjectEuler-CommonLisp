@@ -1,7 +1,7 @@
 ;;;; Problem 4
 ;;;; Largest palindrome product
 
-(load "is-palindrome.lisp")
+(load "is-palindrome")
 
 (defvar *products*
         (loop for i from 100 to 999

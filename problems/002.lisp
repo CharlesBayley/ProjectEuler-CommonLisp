@@ -1,8 +1,8 @@
 ;;;; Problem 2
 ;;;; Even Fibonacci numbers
 
-(load "fibonacci.lisp")
-(load "is-divisible.lisp")
+(load "fibonacci")
+(load "is-divisible")
 
 (defvar *sum* 0)
 (loop for i = 1 then (incf i)
